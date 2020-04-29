@@ -1,21 +1,21 @@
-packagecom.example.exno9;
-importandroid.os.Bundle;
-importandroid.support.v7.app.AppCompatActivity;
-importandroid.view.View;
-importandroid.widget.Button;
-importandroid.widget.EditText;
-importandroid.widget.Toast;
-importjava.io.BufferedReader;
-importjava.io.File;
-importjava.io.FileInputStream;
-importjava.io.FileOutputStream;
-importjava.io.InputStreamReader;
-publicclassMainActivity extendsAppCompatActivity
+package com.example.exno9;
+import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
+import android.view.View;
+import android.widget.Button;
+import android.widget.EditText;
+import android.widget.Toast;
+import java.io.BufferedReader;
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileOutputStream;
+import java.io.InputStreamReader;
+public class MainActivity extends AppCompatActivity
 {
 EditText e1;
 Button write,read,clear;
 @Override
-protectedvoidonCreate(Bundle savedInstanceState)
+protected void onCreate(Bundle savedInstanceState)
 {
 super.onCreate(savedInstanceState);
 
@@ -27,7 +27,7 @@ clear= (Button) findViewById(R.id.button3);
 write.setOnClickListener(newView.OnClickListener()
 {
 @Override
-publicvoidonClick(View v)
+public void onClick(View v)
 {
 String message=e1.getText().toString();
 try
