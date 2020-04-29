@@ -78,7 +78,7 @@ Toast.makeText(getBaseContext(), e.getMessage(), Toast.LENGTH_LONG).show();
 clear.setOnClickListener(newView.OnClickListener()
 {
 @Override
-publicvoidonClick(View v)
+public void onClick(View v)
 {
 e1.setText("");
 }
